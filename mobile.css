@@ -249,3 +249,103 @@ body::before { background-size: 36px 36px; opacity: .6; }
 
 /* Fade-in mais rápido no mobile */
 .fade-in { transition: opacity .5s ease, transform .5s ease; }
+
+
+/* =========================
+   FIXES MOBILE EXTRA
+   ========================= */
+
+/* Evita zoom estranho em inputs no iPhone */
+input,
+select,
+textarea,
+button {
+    font-size: 16px;
+}
+
+/* Corrige palavras grandes */
+h1,
+h2,
+h3,
+p,
+a,
+span {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Botões realmente ocupando largura */
+.btn,
+.btn-wpp {
+    min-height: 52px;
+}
+
+/* Pills não estouram */
+.service-pills {
+    justify-content: center;
+}
+
+.pill {
+    text-align: center;
+}
+
+/* Stats empilhadas em telas muito pequenas */
+@media (max-width: 400px) {
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stat {
+        padding: 28px 20px;
+    }
+}
+
+/* Processo mais confortável */
+.process-grid {
+    gap: 12px;
+    background: transparent;
+}
+
+.process-step {
+    border-left: none;
+    border-top: 2px solid rgba(255,255,255,.08);
+    border-radius: 12px;
+}
+
+/* Footer mais organizado */
+.footer-links {
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Menu mobile com scroll */
+.mobile-nav {
+    overflow-y: auto;
+}
+
+/* Hero sem excesso de espaço */
+.hero-text {
+    width: 100%;
+}
+
+.hero-text p {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CTA */
+.cta-btns {
+    width: 100%;
+}
+
+.cta-btns .btn,
+.cta-btns .btn-wpp {
+    width: 100%;
+}
+
+/* Corrige bug de vh no mobile */
+.hero,
+.service-panel {
+    min-height: 100svh;
+}
