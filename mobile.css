@@ -107,8 +107,25 @@ body { cursor: auto; }
 }
 .hero-buttons .btn { width: 100%; max-width: 320px; justify-content: center; }
 
-/* Hero visual: escondido no mobile */
-.hero-visual { display: none; }
+
+.hero-visual {
+    display: flex;
+    height: 220px;
+}
+
+.star-bg,
+.card1,
+.card2 {
+    display: none;
+}
+
+.hero-mockup {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: min(260px, 80vw);
+}
 
 /* ── STATS ───────────────────────────────────────────────── */
 .stats {
