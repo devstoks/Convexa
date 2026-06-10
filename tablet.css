@@ -1,0 +1,135 @@
+/*
+ * CONVEXA — tablet.css
+ * Breakpoint: 601px – 1024px
+ * Aplicado via: <link rel="stylesheet" media="screen and (min-width:601px) and (max-width:1024px)" href="tablet.css">
+ */
+
+/* ── CURSOR: desativa no tablet (touch) ──────────────────── */
+body { cursor: auto; }
+#cursor, #cursor-ring { display: none; }
+
+/* ── SCROLLBAR ───────────────────────────────────────────── */
+::-webkit-scrollbar { width: 2px; }
+
+/* ── NAVBAR ──────────────────────────────────────────────── */
+.navbar {
+  width: 94%;
+  height: 70px;
+  top: 12px;
+}
+.navbar.scrolled {
+  padding: 0 28px;
+  border-radius: 14px;
+  top: 8px;
+}
+.logo { font-size: 1.5rem; letter-spacing: 2px; }
+.nav-links { gap: 24px; }
+.nav-links a { font-size: .78rem; }
+.navbar > .btn { padding: 10px 20px; font-size: .78rem; }
+
+/* ── HERO ─────────────────────────────────────────────────── */
+.hero {
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  width: 94%;
+  padding-top: 110px;
+  min-height: 100vh;
+  align-items: center;
+}
+.hero-eyebrow { font-size: .65rem; margin-bottom: 18px; }
+
+.hero-text h1 {
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  letter-spacing: -1.5px;
+  margin-bottom: 20px;
+}
+.hero-text p {
+  font-size: .95rem;
+  max-width: 380px;
+  margin-bottom: 32px;
+}
+.hero-buttons { gap: 12px; }
+.btn { padding: 11px 22px; font-size: .78rem; }
+
+/* Hero visual — menor no tablet */
+.hero-visual { height: 400px; }
+.star-bg { font-size: 14rem; }
+.hero-mockup { width: 200px; transform: translate(-26%, -50%); }
+.floating-card { padding: 14px 18px; min-width: 140px; border-radius: 10px; }
+.floating-card .val { font-size: 1.6rem; }
+.floating-card .lbl { font-size: .72rem; }
+.card1 { top: 14%; left: 0; }
+.card2 { bottom: 16%; right: 0; }
+
+/* ── STATS ───────────────────────────────────────────────── */
+.stats { grid-template-columns: repeat(4, 1fr); }
+.stat { padding: 44px 24px; }
+.stat h2 { font-size: clamp(2.4rem, 4vw, 3.5rem); }
+.stat p { font-size: .72rem; }
+
+/* ── SERVICES STICKY SCROLL ──────────────────────────────── */
+.service-panel {
+  height: 100vh;
+  padding: 0 6%;
+}
+.service-inner {
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.service-text h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -1px;
+  margin-bottom: 18px;
+}
+.service-text p {
+  font-size: .92rem;
+  margin-bottom: 24px;
+  max-width: 380px;
+}
+.service-pills { gap: 8px; margin-bottom: 28px; }
+.pill { padding: 6px 13px; font-size: .7rem; }
+
+/* Órbita e ícone ligeiramente menores */
+.service-visual { height: 340px; }
+.svc-icon-bg { width: 220px; height: 220px; }
+.svc-emoji { font-size: 4.5rem; }
+.svc-orbit { width: 300px; height: 300px; }
+
+/* ── PROCESS ─────────────────────────────────────────────── */
+.process-section { padding: 90px 6%; }
+.process-grid { grid-template-columns: repeat(2, 1fr); }
+.process-step { padding: 32px 28px; }
+.process-step h3 { font-size: 1.15rem; }
+.process-step p { font-size: .84rem; }
+
+/* ── CTA FINAL ───────────────────────────────────────────── */
+.cta-section { padding: 120px 8%; }
+.cta-section h2 {
+  font-size: clamp(2rem, 4.5vw, 3.8rem);
+  letter-spacing: -1.5px;
+}
+.cta-section p { font-size: .95rem; margin-bottom: 36px; }
+.cta-btns { gap: 14px; }
+.btn-wpp { padding: 11px 22px; font-size: .78rem; }
+
+/* ── FOOTER ──────────────────────────────────────────────── */
+footer { padding: 56px 6% 32px; }
+.footer-top {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.footer-brand .logo { font-size: 1.4rem; }
+.footer-brand p { font-size: .82rem; max-width: 240px; }
+.footer-links { gap: 36px; flex-wrap: wrap; }
+.footer-col h4 { font-size: .65rem; margin-bottom: 16px; }
+.footer-col ul a { font-size: .8rem; }
+.footer-bottom {
+  font-size: .7rem;
+  flex-direction: row;
+  gap: 0;
+}
+
+/* ── MOBILE MENU: oculto no tablet ───────────────────────── */
+.hamburger { display: none; }
